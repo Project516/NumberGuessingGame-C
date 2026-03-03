@@ -8,16 +8,26 @@ void play_game(int secret_number)
     while (secret_number != guess)
     {
         printf("Enter a number between 1 and 100: ");
-        scanf("%d", &guess);
-        amount_of_guesses = amount_of_guesses +1;
-        
-        if (secret_number < guess)
+        if (scanf("%d", &guess) != 1)
         {
-            printf("You guessed to high!\n");
+            printf("Error reading input!\n");
+
+            int c;
+            while ((c = getchar()) != '\n' && c != EOF);
+            continue;
         }
-        else if (secret_number > guess)
+        else 
         {
-            printf("You guessed to low!\n");
+            amount_of_guesses = amount_of_guesses +1;
+        
+            if (secret_number < guess)
+            {
+              printf("You guessed to high!\n");
+            }
+            else if (secret_number > guess)
+            {
+                printf("You guessed to low!\n");
+            }
         }
     }
 
