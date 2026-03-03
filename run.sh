@@ -1,5 +1,5 @@
 #!/bin/sh
 
 rm -f NumberGuessingGame-C
-make
+make || exit 1
 ./NumberGuessingGame-C
