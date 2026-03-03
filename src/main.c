@@ -1,3 +1,9 @@
+/*
+ * SPDX-FileCopyrightText: 2026 project516 <project516@project516.dev>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 #include "game.h"
 #include <time.h>
 #include <stdlib.h>
