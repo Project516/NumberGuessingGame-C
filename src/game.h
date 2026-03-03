@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
-void play_game(int secret_number);
+int play_game(int secret_number);
+void update_high_score(int current_score);
 
 #endif

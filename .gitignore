@@ -56,3 +56,4 @@ dkms.conf
 
 # Makefile output
 NumberGuessingGame-C
+highscore.txt

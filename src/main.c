@@ -7,7 +7,8 @@ int main()
     srand(time(NULL));
     int secret = (rand() % 100) + 1;
 
-    play_game(secret);
+    int amount_of_guesses = play_game(secret);
+    update_high_score(amount_of_guesses);
 
     return 0;
 

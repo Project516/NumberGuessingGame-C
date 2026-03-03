@@ -1,6 +1,6 @@
 #include "game.h"
 
-void play_game(int secret_number) 
+int play_game(int secret_number) 
 {
     int guess = -1;
     int amount_of_guesses = 0;
@@ -32,5 +32,7 @@ void play_game(int secret_number)
     }
 
     printf("Your guess of %d is correct!\nIt took you %d tries!\n", guess, amount_of_guesses);
+
+    return amount_of_guesses;
 
 }
