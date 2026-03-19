@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+ /* Save file manager */
+
 #include "game.h"
 #include <sys/stat.h>
 #include <sys/types.h>

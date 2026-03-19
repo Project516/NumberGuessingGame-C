@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+ /* Main game program */
 #include "game.h"
 
 int play_game(int secret_number) 

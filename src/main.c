@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+ /* Game entry point */
+
 #include "game.h"
 #include <time.h>
 #include <stdlib.h>
