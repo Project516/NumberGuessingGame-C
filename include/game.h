@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+/* Header file */
+
 #ifndef GAME_H
 #define GAME_H
 

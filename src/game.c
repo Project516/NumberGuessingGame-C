@@ -5,6 +5,7 @@
  */
 
  /* Main game program */
+ 
 #include "game.h"
 
 int play_game(int secret_number) 
