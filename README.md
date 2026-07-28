@@ -8,7 +8,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 A simple number guessing game written in C.
 
-To run on Unix systems, make sure GCC in installed. Clone this repository and run 
+To run on Unix systems, make sure GCC is installed. Clone this repository and run 
 ```
 ./run.sh
 ```
