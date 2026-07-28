@@ -30,11 +30,11 @@ int play_game(int secret_number)
         
             if (secret_number < guess)
             {
-              printf("You guessed to high!\n");
+              printf("You guessed too high!\n");
             }
             else if (secret_number > guess)
             {
-                printf("You guessed to low!\n");
+                printf("You guessed too low!\n");
             }
         }
     }
