@@ -16,7 +16,10 @@ int main()
     int secret = (rand() % 100) + 1;
 
     int amount_of_guesses = play_game(secret);
-    update_high_score(amount_of_guesses);
+    if (amount_of_guesses >= 0)
+    {
+        update_high_score(amount_of_guesses);
+    }
 
     return 0;
 

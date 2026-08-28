@@ -1,6 +1,5 @@
 /*
  * SPDX-FileCopyrightText: 2026 project516 <project516@project516.dev>
- *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -18,10 +17,19 @@ int play_game(int secret_number)
         printf("Enter a number between 1 and 100: ");
         if (scanf("%d", &guess) != 1)
         {
-            printf("Error reading input!\n");
-
             int c;
             while ((c = getchar()) != '\n' && c != EOF);
+
+            /* EOF (Ctrl-D / Ctrl-Z) means the player wants to quit.
+             * Without this check scanf keeps failing and the loop spins
+             * forever because stdin stays in the EOF state. */
+            if (feof(stdin))
+            {
+                printf("Goodbye!\n");
+                return -1;
+            }
+
+            printf("Error reading input!\n");
             continue;
         }
         else 
